@@ -1,0 +1,65 @@
+{
+  "id": "159a1d46-f27e-4dd8-a241-2b8d2e7e5a38",
+  "version": "2.0",
+  "name": "Task1",
+  "url": "https://demo.opencart.com/",
+  "tests": [{
+    "id": "bb219668-72b0-42cb-af87-01809d2a490c",
+    "name": "Task1",
+    "commands": [{
+      "id": "d3ccac45-7e39-4ece-88db-77ac08316a3a",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40097a7f-1c57-4c1f-90a5-32ad95a96ba9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x670",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aac6a383-2373-4cf7-a085-e8c7cf4945c4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Desktops",
+      "targets": [
+        ["linkText=Desktops", "linkText"],
+        ["css=.show:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Desktops')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=20')]", "xpath:href"],
+        ["xpath=//nav/div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Desktops')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1887bf71-7431-4880-b63d-5bc4b02fca2d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mac (1)",
+      "targets": [
+        ["linkText=Mac (1)", "linkText"],
+        ["css=.show li:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Mac (1)')]", "xpath:link"],
+        ["xpath=//div[@id='narbar-menu']/ul/li/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/category&language=en-gb&path=20_27')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mac (1)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8f1ab287-99ad-45c4-88c1-39a7df890ace",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bb219668-72b0-42cb-af87-01809d2a490c"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}

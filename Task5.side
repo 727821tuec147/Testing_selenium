@@ -1,0 +1,111 @@
+{
+  "id": "60f1cd73-cd9a-4faf-8546-ee09ab24bd40",
+  "version": "2.0",
+  "name": "Task5",
+  "url": "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb",
+  "tests": [{
+    "id": "91c93d79-2e7b-45e0-91f8-c2994e75bfec",
+    "name": "Day3_Task5",
+    "commands": [{
+      "id": "a1505eb6-00ba-4891-950e-67fc001748be",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb",
+      "targets": [],
+      "value": "a"
+    }, {
+      "id": "78a149db-a7ae-4b70-829c-705c0aa9d44c",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.form-check:nth-child(2) > .form-check-label",
+      "targets": [
+        ["css=.form-check:nth-child(2) > .form-check-label", "css:finder"],
+        ["xpath=//div[@id='input-theme']/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div/div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Christmas')]", "xpath:innerText"]
+      ],
+      "value": "0.5,15.671875"
+    }, {
+      "id": "a85147c8-7360-47f9-803e-e191a49e12b7",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.form-check:nth-child(2) > .form-check-label",
+      "targets": [
+        ["css=.form-check:nth-child(2) > .form-check-label", "css:finder"],
+        ["xpath=//div[@id='input-theme']/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div/div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Christmas')]", "xpath:innerText"]
+      ],
+      "value": "0.5,15.671875"
+    }, {
+      "id": "58b0ca35-695f-49b5-bbef-dd72645c7c77",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.form-check:nth-child(2) > .form-check-label",
+      "targets": [
+        ["css=.form-check:nth-child(2) > .form-check-label", "css:finder"],
+        ["xpath=//div[@id='input-theme']/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div/div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Christmas')]", "xpath:innerText"]
+      ],
+      "value": "0.5,15.671875"
+    }, {
+      "id": "f164c19e-865d-49d7-8dd3-7e8c9a99dc2a",
+      "comment": "",
+      "command": "click",
+      "target": "id=form-voucher",
+      "targets": [
+        ["id=form-voucher", "id"],
+        ["css=#form-voucher", "css:finder"],
+        ["xpath=//form[@id='form-voucher']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form", "xpath:idRelative"],
+        ["xpath=//div/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94fefa44-37c4-4383-ab00-5a87bafc3b60",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-amount",
+      "targets": [
+        ["id=input-amount", "id"],
+        ["name=amount", "name"],
+        ["css=#input-amount", "css:finder"],
+        ["xpath=//input[@id='input-amount']", "xpath:attributes"],
+        ["xpath=//form[@id='form-voucher']/div[7]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2d3b178-9a31-4312-ba92-667158a7abdb",
+      "comment": "",
+      "command": "click",
+      "target": "name=agree",
+      "targets": [
+        ["name=agree", "name"],
+        ["css=.form-check-input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='agree']", "xpath:attributes"],
+        ["xpath=//form[@id='form-voucher']/div[8]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a791d77-8c10-44b2-b525-50f9cd23a6bf",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e023bea5-b2c3-466b-960f-137a792d1dde",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["91c93d79-2e7b-45e0-91f8-c2994e75bfec"]
+  }],
+  "urls": ["https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb"],
+  "plugins": []
+}
